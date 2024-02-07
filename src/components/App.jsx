@@ -10,3 +10,5 @@ export default function App() {
     </div>
   );
 }
+
+// Path: src/components/Product.jsx

@@ -1,10 +1,15 @@
-import css from "./App.module.css";
-console.log(css);
+import { PageTitle } from "../PageTitle/PageTitle";
+import { Button } from "../Button/Button";
+import { PaymentList } from "../PaymentList/PaymentList";
+import payments from "../payments.json";
 
 export const App = () => {
   return (
     <>
-      <h1 className={css.titel}>Paymants</h1>
+      <PageTitle>Paymants</PageTitle>
+      <Button variant="primary">Click me</Button>
+      <Button variant="secondary">Click me</Button>
+      <PaymentList payments={payments} />
     </>
   );
 };
